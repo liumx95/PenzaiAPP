@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/back_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/registerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="注册"
+            android:textColor="#00868B"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="昵称"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="用户名"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+        <EditText
+            android:id="@+id/et_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:singleLine="true"
+            android:textColorHint="#AAAAAA" />
+
+            <EditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="邮箱"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColorHint="#AAAAAA" />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_btn_zhuce"
+        android:text="注册"
+        android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>
+

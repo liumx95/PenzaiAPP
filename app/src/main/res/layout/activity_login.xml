@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_back1"
+    >
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#01B488"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/IV"-->
+            <!--android:layout_width="40sp"-->
+            <!--android:layout_height="40sp"-->
+            <!--android:src="@mipmap/app1"-->
+
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="盆栽助手"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="20sp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <EditText
+        android:id="@+id/login_password"
+        android:singleLine="true"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:padding="10dip"
+        android:hint="密码"
+        android:background="@drawable/bg_edittext"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/username"
+        android:singleLine="true"
+        android:layout_width="300dp"
+        android:background="@drawable/bg_edittext"
+        android:padding="10dip"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/login_password"
+        android:layout_marginBottom="18dp"
+        android:hint="账号" />
+
+
+    <CheckBox
+        android:id="@+id/cb_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记住密码"
+        android:textColor="#7373B9"
+        android:textSize="15sp"
+        android:layout_below="@+id/login_password"
+        android:layout_alignLeft="@+id/btn_register"
+        android:layout_alignStart="@+id/btn_register"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp" />
+
+    <CheckBox
+        android:id="@+id/cb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动登录"
+        android:textColor="#7373B9"
+        android:textSize="15sp"
+        android:layout_below="@+id/login_password"
+        android:layout_alignRight="@+id/btn_login"
+        android:layout_alignEnd="@+id/btn_login" />
+
+    <ImageView
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@mipmap/app1"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:text="登陆"
+        android:background="@drawable/shape_btn_login"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_below="@+id/cb_login"
+        android:layout_alignRight="@+id/login_password"
+        android:layout_alignEnd="@+id/login_password"
+        android:layout_marginTop="61dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+         android:shadowColor="#68B3FF"
+         android:text="注册"
+         android:background="@drawable/shape_btn_register"
+        android:layout_alignTop="@+id/btn_login"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView" />
+
+</RelativeLayout>
